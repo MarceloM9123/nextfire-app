@@ -30,7 +30,7 @@ export default function Header(){
             <div ref={myRef}>
                 <div >
                     <div className='header'>
-                        <h1 className='section-header-text--large'>Marcelo Mata's Blog</h1>
+                        <h1 className='section-header-text--large'>Marcelo Mata</h1>
                     </div>
                 </div>
             </div>
