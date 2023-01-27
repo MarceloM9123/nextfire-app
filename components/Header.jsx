@@ -25,9 +25,7 @@ export default function Header(){
 
     return(
         <>
-            <Head>
-                <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"/>
-            </Head>
+            <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"/>
             <div ref={myRef}>
                 <div >
                     <div className='header'>
