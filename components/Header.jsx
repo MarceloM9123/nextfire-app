@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import CLOUDS from 'vanta/dist/vanta.clouds.min'
 import { useState, useEffect, useRef } from 'react';
+import Script from 'next/script'
 
 
 export default function Header(){
@@ -25,7 +26,7 @@ export default function Header(){
     return(
         <>
             <Head>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"/>
             </Head>
             <div ref={myRef}>
                 <div >
