@@ -55,9 +55,9 @@ export default function Home(props) {
     <>
         <Header/>
         <main>
-          <h2 className='section-header-text--large'>Hi, I'm Marcelo</h2>
+          <h2 className='section-header-text--large'>Hi, Marcelo here</h2>
           <h2 className='section-header-text--large'>I build software</h2>
-          <h2 className='section-header-text--large'>Check out what I'm up to...</h2>
+          <h2 className='section-header-text--large'>Check out what I do...</h2>
 
           <PostFeed posts={posts} />
 
@@ -68,7 +68,7 @@ export default function Home(props) {
           {postsEnd && 'You have reached the end!'}
           
           <div>
-            <h2 className='section-header-text--large'>Here's some stuff I've made...</h2>
+            <h2 className='section-header-text--large'>Here is some stuff I made...</h2>
             <div className='card'>
               <div>
                 <h3>Project Management Application</h3>
