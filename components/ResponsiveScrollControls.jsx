@@ -60,7 +60,7 @@ export default function ResponsiveScrollControls (){
                 <div>
                   <h2 className='section-header-text--large'>Hi, Marcelo here</h2>
                   <h2 className='section-header-text--large'>I build software</h2>
-                  <h2 className='section-header-text--large'>Here's some stuff I wrote</h2>
+                  <h2 className='section-header-text--large'>Here&apos;s some stuff I wrote</h2>
                 </div>
 
                 <PostFeed posts={posts} />
@@ -72,7 +72,7 @@ export default function ResponsiveScrollControls (){
                 {postsEnd && 'You have reached the end!'}
                 
                 <div>
-                  <h2 className='section-header-text--large'>Here's some stuff I made...</h2>
+                  <h2 className='section-header-text--large'>Here&apos;s some stuff I made...</h2>
                   
                   <div className='card'>
                     <div>
