@@ -1,9 +1,16 @@
 import PostFeed from '../components/PostFeed';
 import Loader from '../components/Loader';
 import { firestore, fromMillis, postToJSON } from '../lib/firebase';
-
 import { useState } from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
+import { Scroll, ScrollControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import Script from 'next/script';
+import ResponsiveCamera from '../components/ResponsiveCamera';
+import ResponsiveScrollControls from '../components/ResponsiveScrollControls';
+import { PostContext } from '../lib/context.js';
+
 
 const LIMIT = 4;
 
@@ -23,73 +30,17 @@ export async function getServerSideProps(context) {
 
 export default function Home(props) {
   const [posts, setPosts] = useState(props.posts);
-  const [loading, setLoading] = useState(false);
-  const [postsEnd, setPostsEnd] = useState(false);
-
-  
-
-  const getMorePosts = async () => {
-    setLoading(true);
-    const last = posts[posts.length - 1];
-
-    const cursor = typeof last.createdAt === 'number' ? fromMillis(last.createdAt) : last.createdAt;
-
-    const query = firestore
-      .collectionGroup('posts')
-      .where('published', '==', true)
-      .orderBy('createdAt', 'desc')
-      .startAfter(cursor)
-      .limit(LIMIT);
-
-      const newPosts = (await query.get()).docs.map((doc) => doc.data());
-
-      setPosts(posts.concat(newPosts));
-      setLoading(false);
-
-      if (newPosts.Length < LIMIT) {
-        setPostsEnd(true);
-      }
-  };
 
   return (
     <>
-        <Header/>
-        <main>
-          <h2 className='section-header-text--large'>Hi, Marcelo here</h2>
-          <h2 className='section-header-text--large'>I build software</h2>
-          <h2 className='section-header-text--large'>Check out what I do...</h2>
-
-          <PostFeed posts={posts} />
-
-          {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
-
-          <Loader show={loading}/>
-
-          {postsEnd && 'You have reached the end!'}
-          
-          <div>
-            <h2 className='section-header-text--large'>Here is some stuff I made...</h2>
-            <div className='card'>
-              <div>
-                <h3>Project Management Application</h3>
-              </div>
-            </div>
-            <div className='card'>
-              <div>
-                <h3>Exercise log and Calorie database Application</h3>
-              </div>
-            </div>
-            <div className='card'>
-              <div>
-                
-                <h3>Appointment Booking Application</h3>
-              </div>
-            </div>
-          </div>
-          
-          <h2 className='section-header-text--large'>You can contact me here</h2>
-
-          </main>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" />
+      
+        <PostContext.Provider value={posts}>
+          <Canvas>
+            <ResponsiveCamera/>
+            <ResponsiveScrollControls/>
+          </Canvas>
+        </PostContext.Provider>
     </>
     
   )

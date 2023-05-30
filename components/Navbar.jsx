@@ -9,22 +9,25 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <ul>
+
         <li>
-          <Link href="/">
-            <button className="btn-logo">FEED</button>
+          <Link legacyBehavior href="/">
+            <button className="btn-logo">Home</button>
           </Link>
         </li>
+
+        <li></li>
 
         {/* user is signed-in and has username */}
         {username && (
           <>
             <li className="push-left">
-              <Link href="/admin">
+              <Link legacyBehavior href="/admin">
                 <button className="btn-blue">Write Posts</button>
               </Link>
             </li>
             <li>
-              <Link href={`/${username}`}>
+              <Link legacyBehavior href={`/${username}`}>
                 <img src={user?.photoURL} />
               </Link>
             </li>
@@ -32,13 +35,13 @@ export default function Navbar() {
         )}
 
         {/* user is not signed OR has not created username */}
-        {!username && (
+        {/* {!username && (
           <li>
-            <Link href="/enter">
+            <Link legacyBehavior href="/enter">
               <button className="btn-blue">Log in</button>
             </Link>
           </li>
-        )}
+        )} */}
       </ul>
     </nav>
   );

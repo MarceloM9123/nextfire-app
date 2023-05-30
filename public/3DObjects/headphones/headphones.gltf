@@ -1,0 +1,791 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 882,
+      "max": [
+        3.9747190475463867,
+        5.411504745483398,
+        0.5902767777442932
+      ],
+      "min": [
+        -3.9747190475463867,
+        4.428435802459717,
+        -0.6622384190559387
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 10584,
+      "componentType": 5126,
+      "count": 882,
+      "max": [
+        0.9998926520347595,
+        0.9940841794013977,
+        0.9981655478477478
+      ],
+      "min": [
+        -0.9998926520347595,
+        -0.9986864924430847,
+        -0.9981655478477478
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 882,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.125,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4608,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 21168,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        3.8301339149475098,
+        8.610945701599121,
+        0.5024386644363403
+      ],
+      "min": [
+        -3.8301336765289307,
+        5.337306499481201,
+        -0.5498842000961304
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24288,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        0.9562767744064331,
+        1.0,
+        0.9999983310699463
+      ],
+      "min": [
+        -0.9562768340110779,
+        -1.0,
+        -0.9999983310699463
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7056,
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        1.0,
+        0.9396640062332153
+      ],
+      "min": [
+        0.0,
+        0.16664989292621613
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 18432,
+      "componentType": 5125,
+      "count": 1152,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27408,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        4.253768444061279,
+        4.715309143066406,
+        1.637836217880249
+      ],
+      "min": [
+        3.192401885986328,
+        1.4411342144012451,
+        -1.6703605651855469
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 54468,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        0.9998168349266052,
+        0.9985664486885071,
+        0.999998927116394
+      ],
+      "min": [
+        -0.9971604943275452,
+        -0.9999734163284302,
+        -0.9999949336051941
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9136,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.34375,
+        -3.867354826070368e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 23040,
+      "componentType": 5125,
+      "count": 12720,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 81528,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        3.981764316558838,
+        3.238114356994629,
+        1.6838356256484985
+      ],
+      "min": [
+        2.524113416671753,
+        -0.017624393105506897,
+        -1.71116304397583
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 91920,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        0.9997190833091736,
+        0.9805676341056824,
+        0.9999713897705078
+      ],
+      "min": [
+        -0.9760505557060242,
+        -0.9998642206192017,
+        -0.9999713897705078
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 27176,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        0.8750250935554504,
+        0.25002506375312805
+      ],
+      "min": [
+        0.6249749064445496,
+        -2.5052398996194825e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 73920,
+      "componentType": 5125,
+      "count": 5184,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 102312,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        3.5826261043548584,
+        3.6625030040740967,
+        1.8942956924438477
+      ],
+      "min": [
+        1.5295963287353516,
+        0.021888094022870064,
+        -1.9018582105636597
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 109248,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        0.9848584532737732,
+        0.998104453086853,
+        0.9998807907104492
+      ],
+      "min": [
+        -0.9998781085014343,
+        -0.997706413269043,
+        -0.9999658465385437
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 34104,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        0.875,
+        0.25
+      ],
+      "min": [
+        0.625,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 94656,
+      "componentType": 5125,
+      "count": 3456,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 116184,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        -3.1924021244049072,
+        4.715309143066406,
+        1.637836217880249
+      ],
+      "min": [
+        -4.253768444061279,
+        1.4411342144012451,
+        -1.6703605651855469
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 143244,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        0.9971602559089661,
+        0.9985663890838623,
+        0.9999988675117493
+      ],
+      "min": [
+        -0.9998168349266052,
+        -0.9999734163284302,
+        -0.9999949336051941
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38728,
+      "componentType": 5126,
+      "count": 2255,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.34375,
+        -3.867354826070368e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 108480,
+      "componentType": 5125,
+      "count": 12720,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 170304,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        -2.524113178253174,
+        3.238114356994629,
+        1.683835506439209
+      ],
+      "min": [
+        -3.981764793395996,
+        -0.017624393105506897,
+        -1.71116304397583
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 180696,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        0.9760463833808899,
+        0.9805657267570496,
+        0.9999712705612183
+      ],
+      "min": [
+        -0.999719500541687,
+        -0.9998642206192017,
+        -0.9999713897705078
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 56768,
+      "componentType": 5126,
+      "count": 866,
+      "max": [
+        0.8750250935554504,
+        0.25002506375312805
+      ],
+      "min": [
+        0.6249749064445496,
+        -2.5052400815184228e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 159360,
+      "componentType": 5125,
+      "count": 5184,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 191088,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        -1.5295963287353516,
+        3.6625030040740967,
+        1.8942956924438477
+      ],
+      "min": [
+        -3.5826261043548584,
+        0.021888094022870064,
+        -1.9018582105636597
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 198024,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        0.9998780488967896,
+        0.998104453086853,
+        0.9998807311058044
+      ],
+      "min": [
+        -0.9848586916923523,
+        -0.997706413269043,
+        -0.9999658465385437
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 63696,
+      "componentType": 5126,
+      "count": 578,
+      "max": [
+        0.875,
+        0.25
+      ],
+      "min": [
+        0.625,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 180096,
+      "componentType": 5125,
+      "count": 3456,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "D31T7 (https://sketchfab.com/D31T7)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/simple-headphone-960ac9ae4baa45b586fc5037a6e3bc96",
+      "title": "Simple Headphone"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 193920,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 68320,
+      "byteOffset": 193920,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 204960,
+      "byteOffset": 262240,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 467200,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "lambert1",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "HeadbandConnector_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "HeadBand_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "PhoneHangerRight_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Phoneright_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Earcupright_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "PhoneHangerLeft_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "PhoneLeft_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "EarcupLeft_MSH_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 29,
+            "POSITION": 28,
+            "TEXCOORD_0": 30
+          },
+          "indices": 31,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Headphone by D31T7.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        6,
+        8,
+        15
+      ],
+      "name": "Headphone_by_D31T7"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "HeadbandConnector_MSH"
+    },
+    {
+      "mesh": 0,
+      "name": "HeadbandConnector_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "HeadBand_MSH"
+    },
+    {
+      "mesh": 1,
+      "name": "HeadBand_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        9,
+        11,
+        13
+      ],
+      "name": "Headphone_Cup_right"
+    },
+    {
+      "children": [
+        10
+      ],
+      "name": "PhoneHangerRight_MSH"
+    },
+    {
+      "mesh": 2,
+      "name": "PhoneHangerRight_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        12
+      ],
+      "name": "Phoneright_MSH"
+    },
+    {
+      "mesh": 3,
+      "name": "Phoneright_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        14
+      ],
+      "name": "Earcupright_MSH"
+    },
+    {
+      "mesh": 4,
+      "name": "Earcupright_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        16,
+        18,
+        20
+      ],
+      "name": "Headphone_Cup_Left"
+    },
+    {
+      "children": [
+        17
+      ],
+      "name": "PhoneHangerLeft_MSH"
+    },
+    {
+      "mesh": 5,
+      "name": "PhoneHangerLeft_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        19
+      ],
+      "name": "PhoneLeft_MSH"
+    },
+    {
+      "mesh": 6,
+      "name": "PhoneLeft_MSH_lambert1_0"
+    },
+    {
+      "children": [
+        21
+      ],
+      "name": "EarcupLeft_MSH"
+    },
+    {
+      "mesh": 7,
+      "name": "EarcupLeft_MSH_lambert1_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

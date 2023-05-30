@@ -52,7 +52,6 @@ export default function Post(props) {
     
     return (
         <main className={styles.container}>
-            <Metatags title="admin page"/>
             <section>
                 <PostContent post={post} />
             </section>
@@ -63,7 +62,7 @@ export default function Post(props) {
                             
                     <AuthCheck
                         fallback={
-                            <Link href="/enter">
+                            <Link legacyBehavior  href="/enter">
                             <button>💗 Sign Up</button>
                             </Link>
                         }
@@ -73,4 +72,5 @@ export default function Post(props) {
             </aside>
         </main>
     )
+
 }
