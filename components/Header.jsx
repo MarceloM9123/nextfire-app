@@ -1,12 +1,8 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Phone } from "./3DModels/Phone";
-import { Center, Environment, Float, Lightformer, OrbitControls, PivotControls, Text3D } from "@react-three/drei";
-import { useControls } from "leva";
+import { Center, Environment, Float, Lightformer, Text3D } from "@react-three/drei";
 import { Headphones } from "./3DModels/Headphones";
 import { SoccerBall } from "./3DModels/SoccerBall";
-import { useLayoutEffect, useRef } from "react";
-import Script from 'next/script'
-import { useIsomorphicEffect } from "/helpers/useIsomorphicEffect.js";
 
 export default function Header() {
   const { viewport, camera } = useThree()
@@ -28,19 +24,13 @@ export default function Header() {
               </Environment>
 
               <Float speed={20} rotationIntensity={.05} floatIntensity={.03}>
-                <PivotControls anchor={[-1,-1,1]} visible={false}>
                   <Phone />  
-                </PivotControls>
               </Float>
               <Float speed={7} floatIntensity={2} rotationIntensity={.2}>
-                <PivotControls anchor={[-1,-1,1]} visible={false}>
                   <Headphones />  
-                </PivotControls>
               </Float>
               <Float speed={4} floatIntensity={2} rotationIntensity={1}>
-                <PivotControls anchor={[0,0,1]} visible={false}>
                   <SoccerBall />  
-                </PivotControls>
               </Float>
 
               <Center disableY>
