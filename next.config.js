@@ -1,17 +1,31 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+//   async headers() {
+//     return [
+//       {
+//         source: "/:path*",
+//         headers: [
+//           {key: "Access-Control-Allow-Origin", value: "*"}
+//         ]
+//       }
+//     ]
+//   }
+  
+// }
+
+// module.exports = nextConfig
+
+module.exports = {
   async headers() {
     return [
       {
         source: "/:path*",
         headers: [
-          {key: "Access-Control-Allow-Origin", value: "*"}
+          { key: "Access-Control-Allow-Origin", value: "*" },
         ]
       }
     ]
   }
-  
-}
+};
 
-module.exports = nextConfig
