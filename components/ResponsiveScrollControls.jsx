@@ -15,16 +15,10 @@ export default function ResponsiveScrollControls (){
     const mainSectionLength = mainSection.current?.offsetHeight
     const responsivePageLength = ((1.2 * window.innerHeight) + mainSectionLength)/(window.innerHeight)
 
-    useEffect(() => {
-
-    }, [ mainSectionLength ])
-
     const [posts, setPosts] = useState(useContext(PostContext));
     const [loading, setLoading] = useState(false);
     const [postsEnd, setPostsEnd] = useState(false);
-
-    
-
+         
     const getMorePosts = async () => {
         setLoading(true);
         const last = posts[posts.length - 1];
