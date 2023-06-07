@@ -8,13 +8,13 @@ import { useLayoutEffect, useRef } from "react";
 import Script from 'next/script'
 import { useIsomorphicEffect } from "/helpers/useIsomorphicEffect.js";
 
-export default function Header() {
+export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/evening_road_01_2k.hdr' }) {
   const { viewport, camera } = useThree()
 
     return(
           <>
               <Environment
-                preset="warehouse"
+                files={env}
               >
 
               <Lightformer
