@@ -49,7 +49,7 @@ export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/
                     position={[-3.5, -1.5, -1]}
                     depth={1}
                     font="/fonts/JosefinSansThic.json"
-                    size={1}
+                    size={1.25}
                     letterSpacing={-0.04}
                     color="#ffffff"
                     anchorX="center"
@@ -57,7 +57,34 @@ export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/
                   >
                     Marcelo Mata 
                       <meshPhysicalMaterial 
-                        color="#ffffff"  
+                        color="#ED1C24"  
+                        roughness={0}
+                        emissive={'#000'}
+                        clearcoat={1}
+                        reflectivity={0.2}
+                        metalness={.2}
+                        iridescence={0.1}
+                        iridescenceIOR={1}
+                        iridescenceThicknessRange={[100,1000]}         
+                      />
+                  </Text3D>
+                </Float>
+              </Center>
+              <Center disableY>
+                <Float speed={20} rotationIntensity={.05} floatIntensity={.03}>
+                  <Text3D
+                    position={[-3.5, -3, -1]}
+                    depth={1}
+                    font="/fonts/JosefinSansThic.json"
+                    size={.8}
+                    letterSpacing={-0.04}
+                    color="#279AF1"
+                    anchorX="center"
+                    anchorY="middle"
+                  >
+                    Passionate Software Developer
+                      <meshPhysicalMaterial 
+                        color="#279AF1"  
                         roughness={0}
                         emissive={'#000'}
                         clearcoat={1}
