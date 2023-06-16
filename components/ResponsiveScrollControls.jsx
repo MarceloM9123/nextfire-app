@@ -12,12 +12,12 @@ import { PostContext } from "../lib/context";
 
 export default function ResponsiveScrollControls (){
     const mainSection = useRef(null)
-    const mainSectionLength = mainSection.current?.offsetHeight
-    const responsivePageLength = ((1.2 * window.innerHeight) + mainSectionLength)/(window.innerHeight)
+    
 
     const [posts, setPosts] = useState(useContext(PostContext));
     const [loading, setLoading] = useState(false);
     const [postsEnd, setPostsEnd] = useState(false);
+    const [pageLength, setPageLength] = useState(4)
          
     const getMorePosts = async () => {
         setLoading(true);
@@ -42,15 +42,23 @@ export default function ResponsiveScrollControls (){
         }
     };
 
+    const handleLoad = () =>{
+      if (mainSection) {
+        const mainSectionLength = mainSection.current?.offsetHeight
+        const responsivePageLength = ((1.2 * window.innerHeight) + mainSectionLength)/(window.innerHeight)
+        setPageLength(responsivePageLength)
+      }
+     }
+
     return (
-        <ScrollControls pages={responsivePageLength} damping={1}> 
+        <ScrollControls pages={pageLength} damping={1}> 
             <Header/>
             <Scroll>
 
             </Scroll>
             <Scroll html>
 
-              <main ref={mainSection}>
+              <main ref={mainSection} onLoad={handleLoad}>
                 <div>
                   <h2 className='section-header-text--large'>Hi, Marcelo here</h2>
                   <h2 className='section-header-text--large'>I build software</h2>
