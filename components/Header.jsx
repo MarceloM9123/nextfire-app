@@ -28,25 +28,19 @@ export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/
               </Environment>
 
               <Float speed={20} rotationIntensity={.05} floatIntensity={.03}>
-                <PivotControls anchor={[-1,-1,1]} visible={false}>
                   <Phone />  
-                </PivotControls>
               </Float>
               <Float speed={7} floatIntensity={2} rotationIntensity={.2}>
-                <PivotControls anchor={[-1,-1,1]} visible={false}>
                   <Headphones />  
-                </PivotControls>
               </Float>
               <Float speed={4} floatIntensity={2} rotationIntensity={1}>
-                <PivotControls anchor={[0,0,1]} visible={false}>
                   <SoccerBall />  
-                </PivotControls>
               </Float>
 
-              <Center disableY>
+              <Center disableY disableZ>
                 <Float speed={20} rotationIntensity={.05} floatIntensity={.03}>
                   <Text3D
-                    position={[-3.5, -1.5, -1]}
+                    position={[0, -1.5, 1]}
                     depth={1}
                     font="/fonts/JosefinSansThic.json"
                     size={1.25}
@@ -70,10 +64,10 @@ export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/
                   </Text3D>
                 </Float>
               </Center>
-              <Center disableY>
+              <Center disableY disableZ>
                 <Float speed={20} rotationIntensity={.05} floatIntensity={.03}>
                   <Text3D
-                    position={[-3.5, -3, -1]}
+                    position={[ 0, -3, 1.5]}
                     depth={1}
                     font="/fonts/JosefinSansThic.json"
                     size={.8}
@@ -82,7 +76,7 @@ export default function Header({ env = 'https://dl.polyhaven.org/file/ph-assets/
                     anchorX="center"
                     anchorY="middle"
                   >
-                    Passionate Software Developer
+                    Software Developer
                       <meshPhysicalMaterial 
                         color="#279AF1"  
                         roughness={0}
