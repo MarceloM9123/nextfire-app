@@ -32,10 +32,12 @@ export function Phone(props) {
 
       
       tl.current
-      .to(phone.current.position, {x:0, y:0, z:9.8}, 2)
-      .to(phone.current.rotation, {x:0, y:-2*Math.PI, z:-Math.PI/2}, 2)
+      // .to(phone.current.position, {duration: .75, x:0, y:0, z:4}, .1)
+      .to(phone.current.position, {duration: .75, x:0, y:0, z:8}, .2)
       
-      .to(phone.current.position, {x:0, y:.15, z:9.8}, 40)
+      .to(phone.current.rotation, {duration: .75, x:0, y:-2*Math.PI, z:-Math.PI/2}, .1)
+      
+      .to(phone.current.position, {x:0, y:.15, z:8}, 2)
       
       }, phone)
       return ()  => ctx.revert()
@@ -43,7 +45,7 @@ export function Phone(props) {
 
 
   return (
-    <group {...props} dispose={null} ref={phone} scale={.3} position={[2.75, 1, -1]} rotation={[0, -1.25, -1.75]} >
+    <group {...props} dispose={null} ref={phone} scale={3} position={[20, 10, -80]} rotation={[0, -1.25, -1.75]} >
       <group >
         <mesh geometry={nodes.Object_2.geometry} material={materials['Material.017']} />
         <mesh geometry={nodes.Object_3.geometry} material={materials['Material.018']} material-color="white">

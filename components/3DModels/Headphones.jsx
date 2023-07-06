@@ -11,6 +11,8 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 
+const COLOR = 'SlateGrey'
+
 export function Headphones(props) {
   const { nodes, materials } = useGLTF('/3DObjects/headphones/headphones.gltf')
   const { viewport } = useThree()
@@ -30,13 +32,27 @@ export function Headphones(props) {
             iridescenceThicknessRange={[100,1000]}         
           />
       </mesh>
-      <mesh geometry={nodes.HeadBand_MSH_lambert1_0.geometry} material={materials.lambert1} />
-      <mesh geometry={nodes.PhoneHangerRight_MSH_lambert1_0.geometry} material={materials.lambert1}/>
-      <mesh geometry={nodes.Phoneright_MSH_lambert1_0.geometry} material={materials.lambert1} />
-      <mesh geometry={nodes.Earcupright_MSH_lambert1_0.geometry} material={materials.lambert1} />
-      <mesh geometry={nodes.PhoneHangerLeft_MSH_lambert1_0.geometry} material={materials.lambert1} />
-      <mesh geometry={nodes.PhoneLeft_MSH_lambert1_0.geometry} material={materials.lambert1} />
-      <mesh geometry={nodes.EarcupLeft_MSH_lambert1_0.geometry} material={materials.lambert1} />
+      <mesh geometry={nodes.HeadBand_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.PhoneHangerRight_MSH_lambert1_0.geometry} material={materials.lambert1}>
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.Phoneright_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.Earcupright_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.PhoneHangerLeft_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.PhoneLeft_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
+      <mesh geometry={nodes.EarcupLeft_MSH_lambert1_0.geometry} material={materials.lambert1} >
+      <meshStandardMaterial color={COLOR} />
+      </mesh>
     </group>
   )
 }
