@@ -11,13 +11,10 @@ import { PostContext } from "../lib/context";
 
 
 export default function ResponsiveScrollControls (){
-    const mainSection = useRef(null)
-    
-
     const [posts, setPosts] = useState(useContext(PostContext));
     const [loading, setLoading] = useState(false);
     const [postsEnd, setPostsEnd] = useState(false);
-    const [pageLength, setPageLength] = useState(4)
+    const {viewport} = useThree()
          
     const getMorePosts = async () => {
         setLoading(true);
@@ -42,39 +39,51 @@ export default function ResponsiveScrollControls (){
         }
     };
 
-    const handleLoad = () =>{
-      if (mainSection) {
-        const mainSectionLength = mainSection.current?.offsetHeight
-        const responsivePageLength = ((1.2 * window.innerHeight) + mainSectionLength)/(window.innerHeight)
-        setPageLength(responsivePageLength)
-      }
-     }
+    const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  	function getCurrentDimension(){
+    	return {
+      		width: window.innerWidth,
+      		height: window.innerHeight
+    	}
+    }
+
+    const sectionLengthPxls = 1420
+    const vph = screenSize.height
+    const pxlToVh = vph/100
+    const vhBetweenSections = sectionLengthPxls / pxlToVh
+    const portfolioTop = 120 + vhBetweenSections
+    const contactTop = portfolioTop + vhBetweenSections
+
+    const htmlSectionLen =  3350
+    const headerLen = 1.2*vph
+    const totalPageLen = htmlSectionLen + headerLen
+    const PAGES = totalPageLen / vph
 
     return (
-        <ScrollControls pages={pageLength} damping={1}> 
+        <ScrollControls pages={PAGES} damping={.5}> 
             <Header/>
             <Scroll>
 
             </Scroll>
             <Scroll html>
 
-              <main ref={mainSection} onLoad={handleLoad}>
-                <div>
-                  <h2 className='section-header-text--large'>Hi, Marcelo here</h2>
-                  <h2 className='section-header-text--large'>I build software</h2>
-                  <h2 className='section-header-text--large'>Here&apos;s some stuff I wrote</h2>
+              <div className="container">
+                <div className="blog">
+                    <h2 className='section-header-text--large'>blog</h2>
+                    <p>king henry. something 4 ur mind</p>
+
+                  <PostFeed posts={posts} />
+
+                  {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
+
+                  <Loader show={loading}/>
+
+                  {postsEnd && 'You have reached the end!'}
                 </div>
-
-                <PostFeed posts={posts} />
-
-                {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
-
-                <Loader show={loading}/>
-
-                {postsEnd && 'You have reached the end!'}
                 
-                <div>
-                  <h2 className='section-header-text--large'>Here&apos;s some stuff I made...</h2>
+                <div className="portfolio" style={{top:`${portfolioTop}vh`}}>
+                  <h2 className='section-header-text--large'>Portfolio</h2>
                   
                   <div className='card'>
                     <div>
@@ -106,19 +115,22 @@ export default function ResponsiveScrollControls (){
 
                 </div>
                 
-                <h2 
-                  className='section-header-text--large'
-                    >You can contact me here: marcelomata91@gmail.com or 
-                    <Link 
-                      legacyBehavior 
-                      href="https://www.linkedin.com/in/marcelomata/"
-                      > LinkedIn
-                    </Link> 
-                </h2>
+                <div className="contact" style={{top:`${contactTop}vh`}}>
+                  <h2 
+                    className='section-header-text--large'
+                      >You can contact me here: marcelomata91@gmail.com or 
+                      <Link 
+                        legacyBehavior 
+                        href="https://www.linkedin.com/in/marcelomata/"
+                        > LinkedIn
+                      </Link> 
+                  </h2>
+                </div>
+              </div>
 
-              </main>
               
             </Scroll>
         </ScrollControls>
     )
 }
+
